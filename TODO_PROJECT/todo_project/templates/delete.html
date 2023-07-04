@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="done"><b>DONE</b></h2><br><br>
+                    <form method="post">
+                    {% csrf_token %}
+
+                    <br><h4 class="text">ARE YOU SURE THE TASK IS COMPLETED</h4><br><br>
+                    <button class="button" type="submit">CONFIRM</button><br><br>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
